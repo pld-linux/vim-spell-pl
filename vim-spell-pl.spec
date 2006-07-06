@@ -1,12 +1,12 @@
 Summary:	Polish dictionaries for VIMspell
 Summary(pl):	Polskie s³owniki dla VIMspella
 Name:		vim-spell-pl
-Version:	20060518
+Version:	20060706
 Release:	1
 License:	Creative Commons License
 Group:		Applications/Editors/Vim
 Source0:	http://www.kurnik.pl/slownik/ort/alt-myspell-pl-%{version}.tar.bz2
-# Source0-md5:	80b7ba85ee65e9f57ca9c4de0a357ce2
+# Source0-md5:	220ed496783615896d35d057342ac5e9
 # vim-7.0/vim70/runtime/spell/pl/pl_PL.diff
 Patch0:		%{name}-pl_PL.diff
 URL:		http://www.kurnik.pl/slownik/ort/
