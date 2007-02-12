@@ -1,5 +1,5 @@
 Summary:	Polish dictionaries for VIMspell
-Summary(pl.UTF-8):   Polskie słowniki dla VIMspella
+Summary(pl.UTF-8):	Polskie słowniki dla VIMspella
 Name:		vim-spell-pl
 Version:	20060706
 Release:	1
