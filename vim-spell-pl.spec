@@ -1,5 +1,5 @@
 Summary:	Polish dictionaries for VIMspell
-Summary(pl):	Polskie s≥owniki dla VIMspella
+Summary(pl.UTF-8):   Polskie s≈Çowniki dla VIMspella
 Name:		vim-spell-pl
 Version:	20060706
 Release:	1
@@ -18,8 +18,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Polish dictionaries for VIMspell.
 
-%description -l pl
-Polskie s≥owniki dla VIMspella.
+%description -l pl.UTF-8
+Polskie s≈Çowniki dla VIMspella.
 
 %prep
 %setup -q -n alt-myspell-pl-%{version}
