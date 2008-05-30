@@ -1,15 +1,16 @@
 Summary:	Polish dictionaries for VIMspell
 Summary(pl.UTF-8):	Polskie słowniki dla VIMspella
 Name:		vim-spell-pl
-Version:	20060706
-Release:	2
+Version:	20080530
+Release:	1
 License:	Creative Commons License
 Group:		Applications/Editors/Vim
-Source0:	http://www.kurnik.pl/slownik/ort/alt-myspell-pl-%{version}.tar.bz2
-# Source0-md5:	220ed496783615896d35d057342ac5e9
+Source0:	http://sjp.pl/slownik/ort/sjp-myspell-pl-%{version}.zip
+# Source0-md5:	427e47910819235a3bf5169cb3cf7f35
 # vim-7.0/vim70/runtime/spell/pl/pl_PL.diff
 Patch0:		%{name}-pl_PL.diff
-URL:		http://www.kurnik.pl/slownik/ort/
+URL:		http://www.sjp.pl/slownik/ort/
+BuildRequires:	unzip
 BuildRequires:	vim >= 4:7.0
 Requires:	vim-rt >= 4:7.0.017-2
 BuildArch:	noarch
@@ -24,7 +25,8 @@ Polish dictionaries for VIMspell.
 Polskie słowniki dla VIMspella.
 
 %prep
-%setup -q -n alt-myspell-pl-%{version}
+%setup -q -c
+unzip pl_PL.zip
 %patch0 -p0
 
 %build
