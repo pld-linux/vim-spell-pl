@@ -2,7 +2,7 @@ Summary:	Polish dictionaries for VIMspell
 Summary(pl.UTF-8):	Polskie słowniki dla VIMspella
 Name:		vim-spell-pl
 Version:	20090531
-Release:	1
+Release:	2
 License:	Creative Commons License
 Group:		Applications/Editors/Vim
 Source0:	http://sjp.pl/slownik/ort/sjp-myspell-pl-%{version}.zip
@@ -12,11 +12,11 @@ Patch0:		%{name}-pl_PL.diff
 URL:		http://www.sjp.pl/slownik/ort/
 BuildRequires:	unzip
 BuildRequires:	vim >= 4:7.0
-Requires:	vim-rt >= 4:7.0.017-2
+Requires:	vim-rt >= 4:7.2.170
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_vimdatadir	%{_datadir}/vim/vimfiles
+%define		_vimdatadir	%{_datadir}/vim
 
 %description
 Polish dictionaries for VIMspell.
@@ -36,8 +36,7 @@ vim -u NONE -c 'set enc=utf-8' -c 'mkspell! pl pl_PL' -c q
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_vimdatadir}/spell
-
-install *.spl $RPM_BUILD_ROOT%{_vimdatadir}/spell
+cp -a *.spl $RPM_BUILD_ROOT%{_vimdatadir}/spell
 
 %clean
 rm -rf $RPM_BUILD_ROOT
