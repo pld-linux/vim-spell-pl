@@ -1,12 +1,12 @@
 Summary:	Polish dictionaries for VIMspell
 Summary(pl.UTF-8):	Polskie słowniki dla VIMspella
 Name:		vim-spell-pl
-Version:	20211201
+Version:	20240701
 Release:	1
 License:	Creative Commons License
 Group:		Applications/Editors/Vim
 Source0:	http://sjp.pl/slownik/ort/sjp-myspell-pl-%{version}.zip
-# Source0-md5:	197ceb21184f588a1f342d51dd9ef9d2
+# Source0-md5:	9da53402dbfe3f93c68cfb5ebb2e0523
 # vim-7.0/vim70/runtime/spell/pl/pl_PL.diff
 Patch0:		%{name}-pl_PL.diff
 URL:		http://www.sjp.pl/slownik/ort/
