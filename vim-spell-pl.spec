@@ -27,7 +27,7 @@ Polskie słowniki dla VIMspella.
 %prep
 %setup -q -c
 unzip pl_PL.zip
-%patch0 -p0
+%patch -P0 -p0
 
 %build
 vim -u NONE -c 'set enc=iso-8859-2' -c 'mkspell! pl pl_PL' -c q
