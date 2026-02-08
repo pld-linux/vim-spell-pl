@@ -5,7 +5,7 @@ Version:	20250901
 Release:	1
 License:	Creative Commons License
 Group:		Applications/Editors/Vim
-Source0:	http://sjp.pl/slownik/ort/sjp-myspell-pl-%{version}.zip
+Source0:	https://sjp.pl/slownik/ort/sjp-myspell-pl-%{version}.zip
 # Source0-md5:	18c6af7a35127582230e493b83b0df12
 # vim-7.0/vim70/runtime/spell/pl/pl_PL.diff
 Patch0:		%{name}-pl_PL.diff
